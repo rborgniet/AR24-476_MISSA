@@ -43,8 +43,9 @@ a, a:hover, a:active, a:visited {
 }
 
 .infofiche {
+  display: none;
   position: fixed;
-  right: -100%;
+  right: 0;
   width: 320px;
   height: auto;
   background-color: rgba(0, 0, 0, 0.8);
