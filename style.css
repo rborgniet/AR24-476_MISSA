@@ -42,6 +42,7 @@ a, a:hover, a:active, a:visited {
   overflow: hidden;
 }
 
+/* PROJECT INFO FICHE */
 .infofiche {
   display: none;
   position: fixed;
@@ -49,7 +50,7 @@ a, a:hover, a:active, a:visited {
   width: 320px;
   height: auto;
   background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
+  border-radius: 0% 0% 0% 7%;
   padding: 20px;
 }
 .infofichetitle {
@@ -116,7 +117,7 @@ a, a:hover, a:active, a:visited {
   font-size: 18px;
   letter-spacing: 1.5px;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .mobile #titleBar {
@@ -327,8 +328,7 @@ body.fullscreen-enabled.mobile #infodocToggle {
 
 #sceneList .scenes {
   width: 100%;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .mobile #sceneList {
@@ -374,12 +374,12 @@ body.fullscreen-enabled.mobile #infodocToggle {
 
 .no-touch #sceneList .scene:hover {
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 #sceneList .scene.current {
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Hide scene list when only a single scene exists */
