@@ -96,6 +96,9 @@ a, a:hover, a:active, a:visited {
   color: white;
   z-index: 1;
 }
+.mobile .scenelist-title {
+  display: none;
+}
 
 .mobile .scenelist-title {
   height: 50px;
