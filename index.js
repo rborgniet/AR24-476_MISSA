@@ -137,6 +137,32 @@
     document.body.classList.add('fullscreen-disabled');
   }
 
+  // Ajouter ou retirer la classe 'active' pour afficher/masquer la div
+  document.querySelector('.infofiche_toggle').addEventListener('click', function() {
+    var infofiche = document.getElementById('infofiche');
+    var infofiche_toggle_icon = document.querySelector('.infofiche_toggle_icon');
+    var infofiche_toggle = document.querySelector('.infofiche_toggle');
+
+    infofiche.style.display = (infofiche.style.display === 'block') ? 'none' : 'block';
+
+    // Récupérer la rotation actuelle de l'icône
+    var currentRotation = window.getComputedStyle(infofiche_toggle_icon).getPropertyValue('transform');
+
+    // Vérifier si l'icône est déjà tournée de 90 ou 180 degrés, et changer la rotation
+    if (currentRotation === 'none' || currentRotation === 'matrix(0, 1, -1, 0, 0, 0)') {
+      infofiche_toggle_icon.style.transform = 'rotate(-90deg)';
+    } else {
+      infofiche_toggle_icon.style.transform = 'rotate(90deg)';
+    }
+
+    // Supprimer la couleur de fond ou la changer
+    if (infofiche.style.display === 'block') {
+      infofiche_toggle.style.backgroundColor = 'rgba(0, 0, 0, 0)'; // Supprime la couleur de fond
+    } else {
+      infofiche_toggle.style.backgroundColor = ''; // Rétablir la couleur de fond si nécessaire
+    }
+  });
+
   // Set handler for scene list toggle.
   sceneListToggleElement.addEventListener('click', toggleSceneList);
 

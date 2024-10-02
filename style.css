@@ -43,6 +43,28 @@ a, a:hover, a:active, a:visited {
 }
 
 /* PROJECT INFO FICHE */
+.infofiche_toggle {
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0% 0% 0% 25%;
+  right: 0;
+}
+.infofiche_toggle_icon {
+  position: fixed;
+  height: 25px;
+  width: 25px;
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease;
+}
+.infofiche_toggle_icon_off {
+    transform: rotate(90deg);
+}
 .infofiche {
   display: none;
   position: fixed;

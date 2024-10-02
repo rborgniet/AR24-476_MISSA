@@ -12,7 +12,7 @@
 
 <div id="pano"></div>
 
-<div class="infofiche">
+<div id="infofiche" class="infofiche">
   <div class="infofichetitle">AR24-476_MISSA</div>
   <div class="separator"></div>
   <div class="infofiche_text"><label>Phase : </label>Avant Projet</div>
@@ -23,6 +23,11 @@
   <div class="infocredits">
     <img class="infocredits_logo" src="img/logo.png">
   </div>
+</div>
+
+<!-- Icône de toggle (on peut aussi utiliser un bouton) -->
+<div class="infofiche_toggle" onclick="document.getElementById('cadre').classList.toggle('active')">
+  <img class="infofiche_toggle_icon" src="img/information_toggle_icon.svg">
 </div>
 
 <div class="scenelist-title">Liste des scènes</div>
