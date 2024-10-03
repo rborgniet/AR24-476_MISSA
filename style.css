@@ -157,7 +157,7 @@ a, a:hover, a:active, a:visited {
 /* FULLSCREEN TOGGLE */
 
 #fullscreenToggle {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 0;
   height: 40px;
@@ -207,7 +207,7 @@ body.fullscreen-enabled #fullscreenToggle {
 
 #autorotateToggle {
   display: block;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 0;
   height: 40px;
@@ -256,34 +256,6 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 
 #autorotateToggle.enabled .icon.off {
   display: none;
-}
-
-/* If there is a fullscreen button, autorotate must placed a bit to the left */
-body.fullscreen-enabled #infodocToggle {
-  right: 40px;
-}
-
-body.fullscreen-enabled.mobile #infodocToggle {
-  right: 50px;
-}
-
-#infodocToggle .icon {
-  right: 5px;
-  width: 28px;
-  height: 28px;
-}
-
-.mobile #infodocToggle .icon {
-  top: 10px;
-  right: 10px;
-}
-
-#infodocToggle .icon.on {
-  display: none;
-}
-
-#infodocToggle.enabled .icon.on {
-  display: block;
 }
 
 /* SCENELIST TOGGLE */
